@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.komputerkit.konversisuhu"
+    namespace = "com.example.konversisuhu"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.komputerkit.konversisuhu"
+        applicationId = "com.example.konversisuhu"
         minSdk = 21
         targetSdk = 34
         versionCode = 1

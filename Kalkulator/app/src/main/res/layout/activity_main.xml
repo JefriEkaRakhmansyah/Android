@@ -63,6 +63,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
         android:backgroundTint="#FFEB3B"
+        android:onClick="btnKurang"
         android:text="Pengurangan"
         android:textColor="#655858" />
 
@@ -74,6 +75,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
         android:backgroundTint="#9C27B0"
+        android:onClick="btnKali"
         android:text="Perkalian"
         android:textColor="#BFB3B3" />
 
@@ -85,6 +87,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="10dp"
         android:backgroundTint="#CC0E0E"
+        android:onClick="btnBagi"
         android:text="Pembagian"
         android:textColor="#FFFFFF" />
 

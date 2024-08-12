@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Konversi Suhu"
+rootProject.name = "KonversiSuhu"
 include(":app")
  
