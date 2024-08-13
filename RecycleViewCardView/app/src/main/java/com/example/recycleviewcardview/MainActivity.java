@@ -1,6 +1,7 @@
 package com.example.recycleviewcardview;
 
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -33,29 +34,45 @@ public class MainActivity extends AppCompatActivity {
         isiData();
     }
 
-    public void load() {
+    public void load()
+    {
         recyclerView = findViewById(R.id.rcvSiswa);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 
-    public void isiData(){
+    public void isiData ()
+    {
         siswaList = new ArrayList<Siswa>();
-        siswaList.add(new Siswa("Budi", "Palembang"));
-        siswaList.add(new Siswa("Edi", "Palembang"));
-        siswaList.add(new Siswa("Roy", "Palembang"));
-        siswaList.add(new Siswa("Ega", "Palembang"));
-        siswaList.add(new Siswa("Mamat", "Palembang"));
-        siswaList.add(new Siswa("Tejo", "Palembang"));
-        siswaList.add(new Siswa("Nurul", "Palembang"));
-        siswaList.add(new Siswa("Nunuk", "Palembang"));
-        siswaList.add(new Siswa("Hasan", "Palembang"));
-        siswaList.add(new Siswa("Evi", "Palembang"));
-        siswaList.add(new Siswa("Agus", "Palembang"));
-        siswaList.add(new Siswa("Cino", "Palembang"));
-        siswaList.add(new Siswa("Toni", "Palembang"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
+        siswaList.add(new Siswa("Eko", "Surabaya"));
+        siswaList.add(new Siswa("Tejo", "Surabaya"));
+        siswaList.add(new Siswa("Siti", "Surabaya"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
+        siswaList.add(new Siswa("Joni", "Surabaya"));
 
-        adapter = new SiswaAdapter(this,siswaList);
+        adapter = new SiswaAdapter(this, siswaList);
         recyclerView.setAdapter(adapter);
+
+
     }
 
+    public void btnTambah (View view)
+    {
+        siswaList.add(new Siswa("JONI", "JAKARTA"));
+        adapter.notifyDataSetChanged();
+    }
 }
